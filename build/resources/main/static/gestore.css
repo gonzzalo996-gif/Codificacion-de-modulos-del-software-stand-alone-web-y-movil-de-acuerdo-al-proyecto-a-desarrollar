@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: #f2f4f8;
+    color: #1f2937;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    background: linear-gradient(135deg, #4f46e5 0%, #2563eb 100%);
+    color: white;
+}
+
+.brand {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: .4rem auto 0;
+    max-width: 640px;
+    opacity: .85;
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+nav {
+    display: flex;
+    gap: .75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+nav button {
+    border: none;
+    background: #eef2ff;
+    color: #1d4ed8;
+    padding: .85rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform .2s ease, background .2s ease;
+}
+
+nav button:hover {
+    transform: translateY(-1px);
+    background: #e0e7ff;
+}
+
+.panel {
+    display: none;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, .08);
+    padding: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.panel.active {
+    display: block;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    gap: .85rem;
+    margin-bottom: 1.4rem;
+}
+
+input, select, button {
+    border: 1px solid #d1d5db;
+    border-radius: .75rem;
+    padding: .9rem 1rem;
+    font-size: .98rem;
+}
+
+input, select {
+    background: #f8fafc;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.list-container {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+}
+
+.list-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .75rem;
+}
+
+.list-container li {
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: .85rem;
+    background: #ffffff;
+}
+
+.message {
+    min-height: 2rem;
+    padding: .9rem 1rem;
+    border-radius: .75rem;
+    margin-top: 1rem;
+    background: #eef2ff;
+    color: #1d4ed8;
+}
+
+@media (max-width: 640px) {
+    nav {
+        justify-content: center;
+    }
+}
